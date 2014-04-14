@@ -107,5 +107,14 @@ namespace Options
 			}
 			return new Option<TOption>(value);
 		}
+
+        /// <summary>
+        /// Returns a value that will be implicitly coerced into the appropriate <see cref="Option{TOption}"/> type.
+        /// </summary>
+        /// <returns>A value that will be implicitly coerced into the appropriate <see cref="Option{TOption}"/> type.</returns>
+	    public static OptionNone None()
+	    {
+	        return new OptionNone();
+	    }
 	}
 }
